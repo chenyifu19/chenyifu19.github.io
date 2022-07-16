@@ -103,14 +103,14 @@ public class Main {
 Java Compiler 即是我们在安装 JDK 的时候，自带的编译工具，我们可以使用 javac 来进行调用：
 
 ```bash
-javac Main.java
+javac FinalMain.java
 ```
 
 #### 1.5.2 运行
 
 编译产生的 Java 字节码，是和操作系统无关的，我们可以在任意操作系统运行，前提是这个系统安装了 Java 运行环境（ JRE ，`Java Runtime Environment`），JRE 中有一个组件叫 Java 虚拟机（ JVM ，`Java Virtual Machine` ），会将 Java 字节码转换为当前操作系统的原生代码，而这个原生代码是可以被当前操作系统理解并直接执行的代码。
 
-![image-20210414112609275](images/image-20210414112609275.png)
+![image-20210414112609275](/Users/cuesky/Silicon/course/JavaEE/images/image-20210414112609275.png)
 
 > JVM 正是 Java程序无需安装、跨平台的原因，这是 Java 程序最大的特点之一。
 

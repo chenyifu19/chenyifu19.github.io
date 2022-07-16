@@ -914,6 +914,12 @@ public class TextBox extends UIControl {
 
 `@Override`，又称为注解，它会告诉编译器，来检查这个方法的签名是否符合方法重写的语法要求。
 
+> 继承：两个类型之间的这种父子关系的描述，需要使用extends关键字 what
+>
+> 当我们想要复用、重用代码的时候，就“可以”使用继承
+>
+> 如果 class A extends B，那么B类型中所有的属性和方法都可以被A类型的实例所使用（私有修饰的成员变量和方法除外）
+
 ### 4.6 向上转型 & 向下转型
 
 - UpCasting：向上转换成父类类型
@@ -923,7 +929,7 @@ public class TextBox extends UIControl {
 public class Main {
 
     public static void main(String[] args) {
-        var control = new UIControl(true);
+        UIControl control = new UIControl(true);
         show(control);
         var box = new TextBox(true, "hello");
         show(box);
@@ -1014,6 +1020,8 @@ public class Main {
 ### 4.8 多态（OOP 原则4）
 
 多态，多种形态或形式，即允许一个对象有多种体现形式。
+
+多态，可以理解为一个行为，在不同的条件下，有不同的效果
 
 ```java
 public class Main {
